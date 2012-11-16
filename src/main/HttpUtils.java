@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class HttpUtils {
 
-    public List<String> getStringFromURL(String Url) throws IOException {
+    public List<String> getStringsFromURL(String Url) throws IOException {
         System.out.println("getting strings from url " + new SimpleDateFormat("mm.ss").format(new Date().getTime()));
         URL urlGetRequest = new URL(Url);
         URLConnection urlConnection = urlGetRequest.openConnection();
